@@ -1,7 +1,9 @@
 import geni.portal as portal
 import geni.rspec.pg as rspec
+import geni.rspec.igext as IG
+from lxml import etree as ET
 
-
+request = pc.makeRequestRSpec()
 prefixForIP = "192.168.1."
 currentIP = 1
 link = request.LAN("lan")
